@@ -15,7 +15,9 @@
 <body>
 
 <div class="container">
-    <h1>Laravel 6 Yajra Datatables Tutorial</h1>
+    <h2><a href="{{  url('/') }}">Back to Home</a></h2> 
+    <br>
+    <h3>Laravel 6 Yajra Datatables Tutorial</h3>
     <table class="table table-bordered data-table">
         <thead>
             <tr>

@@ -11,8 +11,12 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
 
-Route::get('/',"UserController@index")->name('users.index');
+
+
+Route::get('/',"UserController@home")->name('home');
+
+Route::get('/users',"UserController@index")->name('users.index');
+Route::get('db/backup',"DBBackupController@dbBackup")->name('db.backup');
+Route::get('db/restore/',"DBBackupController@dbRestore")->name('db.restore');
+Route::get('db/delete/',"DBBackupController@dbDelete")->name('db.delete');
